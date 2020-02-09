@@ -11,7 +11,7 @@ Performance Test Agent can be used to trigger a load test if run on a load gener
 - Invoke the test script remotely via the agent ( PORT 7008) 
 - Retrieve test results via file server (PORT 7009)
 
-All the above can be automated using a Jenkins plan.
+All of the above can be automated using a Jenkins plan.
 
 
 
