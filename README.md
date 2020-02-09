@@ -46,11 +46,10 @@ fuser -k 7008/tcp #(Doesn't work on MacOS)
 
 ```
 
-## Legal Disclaimer
+## IMPORTANT : READ BEFORE YOU USE THIS PROGRAM!
 
-> This software is made available with NO representations or warranties of any kind about the completeness, accuracy, reliability, suitability or availability for any purpose. Any reliance you place on this software is therefore strictly at your own risk.
+[LICENSE](./LICENSE)
 
-> In no event will the developer be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this software.
 
 
 
