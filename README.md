@@ -36,6 +36,16 @@ curl http://[IP or DNS]:7009
 ```
 > Note: Target sh file must be present in the Script Home directory
 
+#### Kill Performance Test Agent 
+```shell
+pkill -f perftest-agent.py
+
+or 
+
+fuser -k 7008/tcp #(Doesn't work on MacOS)
+
+```
+
 ## Legal Disclaimer
 
 > This software is made available with NO representations or warranties of any kind about the completeness, accuracy, reliability, suitability or availability for any purpose. Any reliance you place on this software is therefore strictly at your own risk.
