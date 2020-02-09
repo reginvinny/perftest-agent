@@ -2,6 +2,7 @@
 #description    : An agent to run test scripts from ScriptHome directory and serve test results
 #author         : Regin Vinny
 #license        : GNU GENERAL PUBLIC LICENSE Version 3
+#repo           : https://github.com/reginvinny/perftest-agent
 #date           : 2019-12-25
 #version        : 1.0
 #usage          : export scriptHome=<script home path>
