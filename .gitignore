@@ -1,0 +1,4 @@
+*.log
+*.jtl
+.DS_Store
+build/out/*
