@@ -1,6 +1,19 @@
 
 ## Performance Test Agent
-A simple agent to execute test scripts and serve results. Works well with popular CI/CD frameworks (Jenkins, Bamboo etc)
+A simple agent to execute test scripts and serve results. Works well with popular CI/CD frameworks.
+
+### Use case:
+Performance Test Agent can be used to trigger a load test if run on a load generator machine.
+
+- Make sure Jmeter is available in Load Generator machine
+- Run Performance Test Agent
+- Create a shell script to invoke the Jmeter test script
+- Invoke the test script remotely via the agent ( PORT 7008) 
+- Retrieve test results via file server (PORT 7009)
+
+All the above can be automated using a Jenkins plan.
+
+
 
 ## Pre-requisites
 - Python 2.7
