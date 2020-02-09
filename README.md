@@ -1,6 +1,6 @@
 
 ## Performance Test Agent
-A utility to sync the current git branch with master branch with ease.
+A simple agent to execute test scripts and serve results. Works well with popular CI/CD frameworks (Jenkins, Bamboo etc)
 
 ## Pre-requisites
 - Python 2.7
@@ -12,35 +12,29 @@ sh build/make.sh
 
 ## Performance Test Agent usage
 
-- Checkout feature branch
-- Enter 'Performance Test Agent' command to sync with master
-
-## Performance Test Agent Uninstallation steps
-
-#### via shell
 ```shell
-uninstall_Performance Test Agent
+export scriptHome=<script home path>
+python perftest-agent.py &
 ```
 
-#### via curl
-```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/reginvinny/Performance Test Agent/master/Performance Test Agent_uninstall.sh)"
-```
+>Default ports are 7008 and 7009 for agent and server respectively
 
-## Performance Test Agent Reinstallation steps
 
-#### via shell
-```shell
-reinstall_Performance Test Agent
-```
-
-#### via curl
-```shell
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/reginvinny/Performance Test Agent/master/Performance Test Agent_reinstall.sh)"
-```
 ## Performance Test Agent help
 
-- Enter 'Performance Test Agent help' command for help
+#### Invoke Test shell script : 
+```shell
+curl -d "script-path/script.sh http://[IP or DNS]:7008
+```
+#### Clear logs (Rotate) : 
+```shell
+curl -d "clear" http://[IP or DNS]:7008
+```
+#### Fetch test results : 
+```shell
+curl http://[IP or DNS]:7009
+```
+> Note: Target sh file must be present in the Script Home directory
 
 ## Legal Disclaimer
 
