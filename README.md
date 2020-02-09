@@ -5,6 +5,7 @@ A simple agent to execute test scripts and serve results. Works well with popula
 ## Pre-requisites
 - Python 2.7
 - ZSH or BASH
+- Linux / MacOS
 
 ## Performance Test Agent build steps
 sh build/make.sh
