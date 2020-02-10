@@ -1,18 +1,17 @@
 
 ## Performance Test Agent
-A simple agent to execute test scripts and serve results. Works well with popular CI/CD frameworks.
+A simple agent to execute shell scripts and serve results. Works well with popular CI/CD frameworks. The main reason to use perftest-agent would be to be avoid the network bottleneck that occurs with high throughput Jmeter tests using distributed mode. [[More info]](http://www.seleniumtests.com/2016/04/should-you-be-using-distributed-testing.html)
 
 ### Use case:
-Performance Test Agent can be used to trigger a load test if run on a load generator machine.
+
+#### Run a load test and retrieve results via HTTP requests
+Performance Test Agent can be used to trigger a load test if run on a load generator machine from CI/CD (egs: Jenkins).
 
 - Make sure Jmeter is available in Load Generator machine
 - Run Performance Test Agent
 - Create a shell script to invoke the Jmeter test script
-- Invoke the test script remotely via the agent ( PORT 7008) 
-- Retrieve test results via file server (PORT 7009)
-
-All of the above can be automated using a Jenkins plan.
-
+- Invoke the test script remotely via the agent ( PORT 7008) from Jenkins Plan
+- Download test results via file server (PORT 7009) to Jenkins plan workspace
 
 
 ## Pre-requisites
