@@ -59,9 +59,10 @@ fuser -k 7008/tcp #(Doesn't work on MacOS)
 
 ```
 
-## IMPORTANT : READ BEFORE YOU USE THIS PROGRAM!
+## Important :
 
-[LICENSE](./LICENSE)
+Performance Test Agent is published under [GNU General Public License v3.0](./LICENSE).
+
 
 
 
